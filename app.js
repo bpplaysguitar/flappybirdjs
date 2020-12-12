@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let birdBottom = 100
   let gravity = 2
   let isGameOver = false
-  let gap = 430
+  let gap = 480
 
   function startGame() {
     birdBottom -= gravity
@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
   let gameTimerId = setInterval(startGame, 20)
 
   function control(e) {
-    //spacebar to jump
     if (e.keyCode === 32) {
       jump()
     }
